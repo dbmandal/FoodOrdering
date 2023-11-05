@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Montserrat&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  background-color: #03d9ff52;
+  fill-opacity: blur(5px);
+  background-repeat: no-repeat;
+ background-size: 100% 100%;
+ background-attachment: fixed;
+
+}
+
+
+.initial{
+  background: #f0250b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9310d, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e4290c, #e46a0d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+justify-content:space-between;
+}
+ul li{
+list-style-type:none;
+display:inline;
+justify-content: space-between;
+margin:30px;
+}
+li a{
+  text-decoration:none;
+  font-weight:bold;
+  font-size:30px;
+  color:black;
+}
+.Cuisine{
+  font-size:90px;
+  font-weight:bold;
+  padding:74px;
+  margin:auto;
+  
+}
+.input{
+  background-color:white;
+  color:black;
+  border:4px solid grey;
+  font-size:32px;
+  font-weight:bolder;
+  width: 75%;
+}
+.Clown{
+padding:29px;
+}
+button{
+  font-weight:bold;
+  font-size:32px;
+  padding:5px 10px;
+}
+span{
+text-align:center;
+font-size:45px;
+font-weight:bold;
+font-family:Arial;
+}
+p{
+text-align:center;
+font-weight:bold;
+font-family:Sans serif;
+}
+.Cart{
+font-size:50px;
+}
+
+.fa {  
+padding: 10px;  
+text-align: center;  
+margin: 5px 2px;  
+font-size: 20px;  
+width: 50px;  
+}  
+.fa-facebook {  
+background: #3B5998;  
+color: white;  
+}  
+.fa-twitter {  
+background:#3B5998;   
+color: white;  
+}  
+
+.Gif1{
+  margin-left: 200px;
+}
+
+.Gif2{
+  margin-left: 200px;
+
+}
+.Gif3{
+  margin-left: 200px;
+
+}
+.Gif4{
+  margin-left: 200px;
+
+}
+
+
+/* CSS */
+button {
+padding:5px 10px;
+border: none;
+outline: none;
+color: rgb(255, 255, 255);
+background: blue;
+cursor: pointer;
+position: relative;
+z-index: 0;
+border-radius: 10px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+button:before {
+content: "";
+background: linear-gradient(
+  45deg,
+  #ff0000,
+  #2c1706,
+  #908e0e,
+  #102e04,
+  #162f2a,
+  #002bff,
+  #170a26,
+  #36082c,
+  #ff0000
+);
+position: absolute;
+top: -2px;
+left: -2px;
+background-size: 400%;
+z-index: -1;
+filter: blur(5px);
+-webkit-filter: blur(5px);
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+animation: glowing-button 20s linear infinite;
+transition: opacity 0.3s ease-in-out;
+border-radius: 10px;
+}
+
+@keyframes glowing-button {
+0% {
+  background-position: 0 0;
+}
+50% {
+  background-position: 400% 0;
+}
+100% {
+  background-position: 0 0;
+}
+}
+
+button:after {
+z-index: -1;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgb(154, 108, 56);
+left: 0;
+top: 0;
+border-radius: 10px;
+}	
